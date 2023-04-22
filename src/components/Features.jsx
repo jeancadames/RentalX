@@ -3,9 +3,12 @@ import CarTopView from '../assets/chevy cruze top view.png'
 import {ImPriceTags} from 'react-icons/im'
 import {RiMedalFill} from 'react-icons/ri'
 import {FaCarCrash} from 'react-icons/fa'
-import {MdSupportAgent} from 'react-icons/md'
-import {AiFillDollarCircle, AiFillCreditCard} from 'react-icons/ai'
-
+import {MdSupportAgent, MdOutlineElectricBolt} from 'react-icons/md'
+import {GiGearStickPattern} from 'react-icons/gi'
+import {TbEngine} from 'react-icons/tb'
+import {BsThermometerSnow} from 'react-icons/bs'
+import {CiCircleMore} from 'react-icons/ci'
+import {AiFillDollarCircle, AiFillCreditCard, AiOutlineCheck} from 'react-icons/ai'
 
 export const Features = () => {
   return (
@@ -43,6 +46,43 @@ export const Features = () => {
                     <div className="card-reason"><FaCarCrash/></div>
                     <span>Your choice <br /> of mechanic</span>
                 </div>
+            </div>
+        </div>
+        <div className="features-slides">
+            <div className="slide-container">
+                <div className="slide-card">
+                    <TbEngine/>
+                </div>
+                <span>Engine</span>
+                <AiOutlineCheck className='icon-check'/>
+            </div>
+            <div className="slide-container">
+                <div className="slide-card">
+                    <GiGearStickPattern/>
+                </div>
+                <span>Transmission</span>
+                <AiOutlineCheck className='icon-check'/>
+            </div>
+            <div className="slide-container">
+                <div className="slide-card">
+                    <MdOutlineElectricBolt/>
+                </div>
+                <span>Electrical</span>
+                <AiOutlineCheck className='icon-check'/>
+            </div>
+            <div className="slide-container">
+                <div className="slide-card">
+                    <BsThermometerSnow/>
+                </div>
+                <span>Cooling</span>
+                <AiOutlineCheck className='icon-check'/>
+            </div>
+            <div className="slide-container">
+                <div className="slide-card">
+                    <CiCircleMore/>
+                </div>
+                <span>20+ More</span>
+                <AiOutlineCheck className='icon-check'/>
             </div>
         </div>
     </div>
