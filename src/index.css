@@ -34,7 +34,7 @@
   margin: 0 1rem;
 }
 
-.navbar-container ul li a{
+.navbar-container ul li a, .navbar-container h1 a{
   text-decoration: none;
   color: #000;
 }
@@ -45,6 +45,12 @@
   border-radius: 5px;
   color: #fff;
   border: none;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.cta:hover{
+  background-color: var(--primary-color);
 }
 
 li.cta > a{
@@ -64,7 +70,7 @@ li.cta > a{
 
 .left-side{
   width: 50%;
-  height: 50%;
+  height: 100%;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -93,28 +99,24 @@ li.cta > a{
 }
 
 .search-container{
+  background-color: #fff;
   display: flex;
-  margin-top: 1rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.date-selector p{
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 12px;
-  background-color: #fff;
-  padding: 0.5rem;
-  border-radius: 10px;
 }
 
-.search-container > *{
-  cursor: pointer;
-}
-
-.search-container .cta{
-  padding: 0.5rem 1rem;
-}
-
-.search-container span{
+.location-selector, .date-selector{
+  justify-content: space-around;
   display: flex;
-  align-items: center;
-  opacity: 0.7;
+  flex-direction: column;
 }
 
 .work-section{
@@ -122,6 +124,13 @@ li.cta > a{
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+input[type="date"], .dropdown-list, .current-location, select{
+  border: 1px solid black;
+  height: 25px;
+  padding: 2px 5px;
+  font-size: 12px;
 }
 
 .brands-container{
@@ -307,6 +316,7 @@ li.cta > a{
   border-radius: 10px;
   margin: 1rem;
   cursor: pointer;
+  transition: all .3s ease;
 }
 
 .dealer-opt.active{
@@ -381,7 +391,7 @@ li.cta > a{
   font-size: 18px;
 }
 
-.btn-buy{
+a.btn-buy{
   background-color: var(--btn-color);
   color: #fff;
   padding: 15px;
@@ -390,6 +400,13 @@ li.cta > a{
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
+  display: block;
+  transition: all .3s ease;
+  text-decoration: none;
+}
+
+.btn-buy:hover{
+  background-color: var(--primary-color);
 }
 
 .features-section{
@@ -526,6 +543,28 @@ li.cta > a{
   margin: 0 3rem 3rem 3rem;
 }
 
+.car-detail-container{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin: 5rem 2rem;
+  align-items: center;
+  background-color: var(--light-gray);
+}
+
+.car-detail-container img{
+  max-width: 550px;
+}
+
+.car-info-container{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+
 @media screen and (max-width: 1450px) {
   .left-image img{
     opacity: 0.4;
@@ -542,6 +581,11 @@ li.cta > a{
   .features-left,.features-right{
     gap:1rem;
     margin: 0 1rem;
+  }
+  .car-card{
+    width: 350px;
+    height: 550px;
+    margin: 2rem 0.5rem;
   }
 }
 

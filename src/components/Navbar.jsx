@@ -1,18 +1,19 @@
 import {GiHamburgerMenu} from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   return (
     <nav className="navbar-container">
-        <h1>RentalX</h1>
+        <h1><Link to={'/'}>RentalX</Link></h1>
         <ul>
-          <li><a href="#">Rent</a></li>
-          <li><a href="#">Share</a></li>
-          <li><a href="#">Ride</a></li>
-          <li><a href="#">Service</a></li>
+          <li><Link>Rent</Link></li>
+          <li><Link>Share</Link></li>
+          <li><Link>Ride</Link></li>
+          <li><Link>Service</Link></li>
         </ul>
         <ul>
-          <li><a href="#">Sign up</a></li>
-          <li className="cta"><a href="#">Sign in</a></li>
+          <li><Link>Sign up</Link></li>
+          <li className="cta"><Link>Sign in</Link></li>
         </ul>
         <GiHamburgerMenu className='menu'/>
     </nav>

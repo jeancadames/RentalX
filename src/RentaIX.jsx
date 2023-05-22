@@ -4,13 +4,11 @@ import { Cars, Features, Footer, Hero, HowWorks, Navbar, Services } from './comp
 export const RentaIX = () => {
   return (
     <>
-        <Navbar/>
         <Hero/>
         <HowWorks/>
         <Services/>
         <Cars/>
         <Features/>
-        <Footer/>
     </>
   )
 }
