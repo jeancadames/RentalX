@@ -1,5 +1,5 @@
 import Carousel from 'react-multi-carousel';
-import {CarCard, Features, FilterSearch} from '../components/index'
+import {CarCard, Features } from '../components/index'
 import { carsData } from '../data/carsData';
 import { SlSpeedometer } from 'react-icons/sl';
 import { TbGasStation, TbManualGearbox } from 'react-icons/tb';

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import { CarCard } from './index'
 import { SiAudi, SiHonda, SiMazda, SiNissan, SiToyota, } from 'react-icons/si';
