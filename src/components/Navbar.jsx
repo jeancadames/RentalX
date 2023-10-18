@@ -5,12 +5,12 @@ export const Navbar = () => {
   return (
     <nav className="navbar-container">
         <h1><Link to={'/'}>RentalX</Link></h1>
-        <ul>
-          <li><Link>Rent</Link></li>
+        {/* <ul>
+          <li><Link to={'/rent'}>Rent</Link></li>
           <li><Link>Share</Link></li>
           <li><Link>Ride</Link></li>
           <li><Link>Service</Link></li>
-        </ul>
+        </ul> */}
         <ul>
           <li><Link>Sign up</Link></li>
           <li className="cta"><Link>Sign in</Link></li>

@@ -9,7 +9,7 @@ export const CarCard = ({car}) => {
   return (
     <div className="car-card">
         <div className="image-container">
-            <img src={`src/assets/${model}.png`} alt={`${model}`} />
+            <img src={`../src/assets/${model}.png`} alt={`${model}`} />
         </div>
         <div className="car-details">
         <span className="year">

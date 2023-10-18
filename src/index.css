@@ -15,11 +15,15 @@
   --terciary-color: #ffb703;
 }
 
+.wrapper{
+  margin: 3rem 5rem;
+}
+
 .navbar-container{
   display: flex;
   align-items: center;
-  padding: 2rem 0;
-  justify-content: space-around;
+  padding: 2rem 3rem;
+  justify-content: space-between;
   background-color: var(--light-gray);
   font-weight: 600;
 }
@@ -99,12 +103,18 @@ li.cta > a{
 }
 
 .search-container{
-  background-color: #fff;
+  background-color: var(--btn-color);
+  color: #fff;
   display: flex;
   margin: 2rem 0;
   border-radius: 20px;
   padding: 1rem;
   justify-content: space-around;
+}
+
+.search-container .cta{
+  background-color: #fff;
+  color: var(--btn-color);
 }
 
 .date-selector p{
@@ -131,6 +141,11 @@ input[type="date"], .dropdown-list, .current-location, select{
   height: 25px;
   padding: 2px 5px;
   font-size: 12px;
+  cursor: pointer;
+}
+
+input[type="date"], .dropdown-list, .current-location, select:focus{
+  outline: none;
 }
 
 .brands-container{
@@ -337,8 +352,6 @@ input[type="date"], .dropdown-list, .current-location, select{
 }
 
 .car-card{
-  width: 450px;
-  height: 630px;
   background-color: #fff;
   border-radius: 30px;
   padding: 1rem;
@@ -414,7 +427,7 @@ a.btn-buy{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 20%
+  margin-bottom: 5rem;
 }
 
 .features-section h1{
@@ -540,7 +553,20 @@ a.btn-buy{
 
 .carousel-container{
   width: 100%;
-  margin: 0 3rem 3rem 3rem;
+  /* margin: 0 3rem 3rem 3rem; */
+}
+
+.car-detail-container-container{
+  margin: 5rem 2rem;
+}
+
+.car-detail-container-container h1{
+  margin: 1rem 0;
+}
+
+.car-detail-container-container h2{
+  text-align: center;
+  margin: 3rem 0;
 }
 
 .car-detail-container{
@@ -549,13 +575,30 @@ a.btn-buy{
   border-radius: 20px;
   flex-wrap: wrap;
   padding: 2rem;
-  margin: 5rem 2rem;
+  /* margin: 5rem 2rem; */
   align-items: center;
-  background-color: var(--light-gray);
+  border-radius: 30px;
+  /* box-shadow: 0px 0px 33px 1px rgba(0,0,0,0.1); */
+  background-color: #fff;
+  border: 5px solid #e9ecef;
 }
 
+.car-detail-container .details{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.car-detail-container .details span{
+  /* font-size: 24px; */
+  margin: 1rem 0;
+}
 .car-detail-container img{
   max-width: 550px;
+  background-color: var(--light-gray);
+  padding: 1rem;
+  border-radius: 30px;
 }
 
 .car-info-container{
@@ -564,6 +607,38 @@ a.btn-buy{
   width: 700px;
 }
 
+.rent-container{
+  display: flex;
+}
+
+.cars-side-filter{
+  width: 100px;
+  margin-top: 2rem;
+  border-right-width: 5px;
+  border-color: var(--primary-color);
+}
+
+.cars-displayer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.cars-displayer .car-card{
+  font-size: 14px;
+  width: 350px;
+  overflow: hidden;
+  height: 530px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 0.5rem;
+  margin: 2rem;
+  box-shadow: 0px 0px 33px 1px rgba(0,0,0,0.1);
+}
+
+.cars-displayer .car-card span{
+  font-size: 14px;
+}
 
 @media screen and (max-width: 1450px) {
   .left-image img{
@@ -582,11 +657,7 @@ a.btn-buy{
     gap:1rem;
     margin: 0 1rem;
   }
-  .car-card{
-    width: 350px;
-    height: 550px;
-    margin: 2rem 0.5rem;
-  }
+
 }
 
 @media screen and (max-width: 710px) {
